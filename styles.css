@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+  --primary-bright-orange: hsl(31, 77%, 52%);
+  --primary-dark-cyan: hsl(184, 100%, 22%);
+  --primary-very-dark-cyan: hsl(179, 100%, 13%);
+
+  --neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --neutral-very-light-gray: hsl(0, 0%, 95%);
+
+  --ff-lexend_deca: 'Lexend Deca', sans-serif;
+  --ff-big_shoulder_display: 'Big Shoulders Display', cursive;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--neutral-very-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  padding: 40px;
+}
+
+p {
+  font-size: 15px;
+  font-family: var(--ff-lexend_deca);
+  color: var(--neutral-transparent-white);
+  line-height: 1.5em;
+  padding-top: 30px;
+}
+
+h1 {
+  font-family: var(--ff-big_shoulder_display);
+  text-transform: uppercase;
+  color: var(--neutral-very-light-gray);
+  padding-top: 30px;
+}
+
+.sedan {
+  background-color: var(--primary-bright-orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.suv {
+  background-color: var(--primary-dark-cyan);
+}
+
+.lux {
+  background-color: var(--primary-very-dark-cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.learn-more {
+  margin-top: 75px;
+  padding: 12px;
+  border-radius: 2em;
+  width: 60%;
+  border: none;
+  font-family: var(--ff-lexend_deca);
+}
+
+.learn-more:hover {
+  border: 2px solid var(--neutral-transparent-white);
+  background-color: transparent;
+  color: var(--neutral-transparent-white);
+  cursor: pointer;
+}
+
+.sedan-button {
+  color: var(--primary-bright-orange);
+}
+
+.suv-button {
+  color: var(--primary-dark-cyan);
+}
+
+.lux-button {
+  color: var(--primary-very-dark-cyan);
+}
+
+@media (max-width: 930px) {
+  .main-container {
+    flex-direction: column;
+    padding: 100px 0;
+  }
+
+  .sedan {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .lux {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
+
+
+
